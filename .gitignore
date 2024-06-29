@@ -1,37 +1,24 @@
-HELP.md
-.gradle
+# Arquivos de build e dependências
+target/
 build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# Arquivos de configuração local do IDE
+.idea/
 *.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Arquivos de log
+*.log
+*.log.*
 
-### VS Code ###
-.vscode/
+# Arquivos de configuração específicos
+application.properties
+application.yml
+
+# Arquivos de build do Maven/Gradle
+mvnw
+mvnw.cmd
+.mvn/
+
+# Arquivos temporários ou de backup
+*~
+.*.swp

@@ -1,13 +1,11 @@
-package com.iara.iararegistration;
+package com.example.validation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class IaraRegistrationApplication {
-
+public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(IaraRegistrationApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
-
 }

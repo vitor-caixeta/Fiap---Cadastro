@@ -1,20 +1,31 @@
-# Iara Games User Registration API
+# Projeto Spring Boot de Validação de Usuários
 
-## Descrição
-Esta API permite o cadastro de usuários no site da Iara Games. A API valida e armazena os dados dos usuários de forma segura.
+Este é um projeto de exemplo em Spring Boot para demonstrar como criar uma API simples para validação de usuários utilizando autenticação básica.
+
+## Recurso Implementado
+
+O projeto implementa um serviço RESTful que oferece endpoints para:
+
+- Autenticação de usuários através de um endpoint POST `/api/login`
+- Verificação de status de autenticação através de um endpoint GET `/api/status`
 
 ## Tecnologias Utilizadas
-- Java
-- Spring Boot
-- MySQL
 
-## Endpoints
-### Cadastro de Usuário
-`POST /api/users/register`
-- Request Body:
-```json
-{
-    "name": "Nome do Usuário",
-    "email": "email@exemplo.com",
-    "password": "senha123"
-}
+- Java 
+- Spring Boot 
+- Maven
+
+## Configuração e Uso
+
+### Pré-requisitos
+
+- Java instalado
+- Maven instalado
+
+### Configuração
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/raicaste/IaraRegistration.git
+   cd seu/caminho/IaraRegistration
