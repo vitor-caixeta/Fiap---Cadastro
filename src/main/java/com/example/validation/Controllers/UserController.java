@@ -1,4 +1,4 @@
-package com.example.validation.controller;
+package com.example.validation.Controllers;
 
 import com.example.validation.model.User;
 import org.springframework.web.bind.annotation.*;
@@ -8,7 +8,6 @@ public class UserController {
 
     @PostMapping("/validate")
     public String validateUser(@RequestBody User user) {
-        // Imprime os dados recebidos para debug
         System.out.println("Recebido: " + user.getUsername() + ", " + user.getPassword());
 
         if (isValidPassword(user.getPassword())) {
@@ -19,11 +18,19 @@ public class UserController {
     }
 
     private boolean isValidPassword(String password) {
-        // Exemplo de validação de senha:
-        // Deve ter pelo menos 8 caracteres, uma letra maiúscula, um número e um caractere especial
-        return password.length() >= 8 &&
-                password.matches(".*[A-Z].*") &&
-                password.matches(".*\\d.*") &&
-                password.matches(".*[@$!%*?&].*");
+        // Verifica se a senha tem pelo menos 8 caracteres
+        if (password.length() < 8) return false;
+
+        // Verifica se contém pelo menos uma letra maiúscula
+        if (!password.chars().anyMatch(Character::isUpperCase)) return false;
+
+        // Verifica se contém pelo menos um número
+        if (!password.chars().anyMatch(Character::isDigit)) return false;
+
+        // Verifica se contém pelo menos um caractere especial
+        String specialChars = "[@$!%*?&]";
+        if (!password.matches(".*[" + specialChars + "].*")) return false;
+
+        return true; // Senha válida
     }
 }

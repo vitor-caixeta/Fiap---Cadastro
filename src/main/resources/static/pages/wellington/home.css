@@ -1,0 +1,55 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.vaga-card {
+    padding: 20px;
+    background-color: #EBEBEB;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.vaga-card h5 {
+    font-weight: bold;
+}
+
+.vaga-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vaga-info p {
+    margin: 0;
+}
+
+.vaga-info .salario {
+    font-weight: bold;
+}
+
+.mentoria-card {
+    padding: 25px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 250px;
+    margin-right: 10px;
+}
+
+hr {
+    margin: 30px 0;
+}

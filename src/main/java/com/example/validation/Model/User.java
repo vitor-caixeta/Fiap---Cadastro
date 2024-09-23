@@ -4,14 +4,13 @@ public class User {
     private String username;
     private String password;
 
-    public User() {
-    }
-
+    // Construtor que aceita username e password
     public User(String username, String password) {
         this.username = username;
         this.password = password;
     }
 
+    // Getters e Setters
     public String getUsername() {
         return username;
     }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Editar Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="profile_edit.css" rel="stylesheet">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../sabrina/profile.html">Meu perfil</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../wellington/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../julia/filtrarvagas.html">Filtrar Vagas</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../julia/notificacoes.html">Notificações</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mais opções
+              </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../vitor/centralajuda.html">FAQ e Suporte</a></li>
+              <li><a class="dropdown-item" href="../vitor/recursosed.html">Recursos Educacionais</a></li>
+              <li><a class="dropdown-item" href="../vitor/testevocacional.html">Teste Vocacional</a></li>
+              <li><a class="dropdown-item" href="../sabrina/orientação_profissional.html">Orientação profissional</a></li>
+              </ul>
+          </li>
+          </ul>
+      </div>
+      </div>
+  </nav>
+</head>
+<body>
+    <div class="container mt-5 pt-4">
+
+        <div class="row justify-content-center text-center">
+            <div class="col-md-2">
+                <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Foto do perfil">
+            </div>
+            <div class="col-md-8">
+                <h4>Maria Silva</h4>
+            </div>
+        </div>
+
+
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" value="Maria">
+            </div>
+            <div class="mb-3">
+                <label for="sobrenome" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome" value="Silva">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" value="">
+                <i class="bi bi-check-circle"></i>
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="telefone" value="+55 ()">
+                <i class="bi bi-check-circle"></i>
+            </div>
+            <div class="mb-3">
+                <label for="genero" class="form-label">Gênero</label>
+                <select class="form-select" id="genero">
+                    <option selected>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Outro</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="nascimento" class="form-label">Data de Nascimento</label>
+                <input type="date" class="form-control" id="nascimento" value="">
+            </div>
+            <div class="mb-3">
+                <label for="bio" class="form-label">Bio</label>
+                <textarea class="form-control" id="bio" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 ">Salvar</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

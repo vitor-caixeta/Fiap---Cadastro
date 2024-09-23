@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientação Profissional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="orientação_prossifional.css" rel="stylesheet">
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../sabrina/profile.html">Meu perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../wellington/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../julia/filtrarvagas.html">Filtrar Vagas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../julia/notificacoes.html">Notificações</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mais opções
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../vitor/centralajuda.html">FAQ e Suporte</a></li>
+                <li><a class="dropdown-item" href="../vitor/recursosed.html">Recursos Educacionais</a></li>
+                <li><a class="dropdown-item" href="../vitor/testevocacional.html">Teste Vocacional</a></li>
+                <li><a class="dropdown-item" href="../sabrina/orientação_profissional.html">Orientação profissional</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h4>Orientação Profissional</h4>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="mic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="20" height="20" fill="url(#pattern0_38_167)"/>
+                            <defs>
+                            <pattern id="pattern0_38_167" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_38_167" transform="scale(0.0078125)"/>
+                            </pattern>
+                            <image id="image0_38_167" width="128" height="128" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                            </svg>
+                        </i>
+                    </button>
+                </div>
+                <p><span class="estilo-maria">Oi, Maria!</span><br>O que podemos ajudar hoje?</p>
+            </div>
+        </div>
+
+
+<div class="row mb-4">
+        <div class="col-6">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">Teste Vocacional</h5>
+                    <p class="card-text">Descubra suas habilidades e interesses profissionais respondendo a perguntas.</p>
+                </div>
+            </div>
+        </div>
+    <div class="col-6">
+        <div class="card bg-light">
+            <div class="card-body">
+                <h5 class="card-title">Mentorias</h5>
+                <p class="card-text">Conecte-se a mentores e acesse tutoriais para desenvolver suas habilidades.</p>
+            </div>
+        </div>
+    </div>
+</div> 
+
+    <h5>Achamos que você pode gostar</h5>
+
+        <div id="suggestionCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <p class="card-title">Suporte Emocional e Bem-estar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <p class="card-title">Recursos Educacionais</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <p class="card-title">Série de Sucesso</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <p class="card-title">Desenvolvimento Pessoal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <p class="card-title">Tecnologia e Inovação</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <p class="card-title">Saúde e Fitness</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Controles do Carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#suggestionCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#suggestionCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 package com.example.validation;
 
-import com.example.validation.controller.UserController;
+import com.example.validation.Controllers.UserController;
 import com.example.validation.model.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -32,7 +32,6 @@ public class ApplicationTests {
 
     @Test
     public void testValidationSuccess() {
-        // Teste de sucesso de validação de usuário
         User user = new User("username", "Senha@123");
         ResponseEntity<String> response = restTemplate.exchange(
                 "http://localhost:" + port + "/validate",
@@ -51,4 +50,10 @@ public class ApplicationTests {
         ResponseEntity<String> response = restTemplate.exchange(
                 "http://localhost:" + port + "/validate",
                 HttpMethod.POST,
-                new HttpEntity<>(us
+                new HttpEntity<>(user),
+                String.class);
+
+        Assertions.assertEquals(200, response.getStatusCodeValue());
+        Assertions.assertEquals("Não Validado", response.getBody());
+    }
+}

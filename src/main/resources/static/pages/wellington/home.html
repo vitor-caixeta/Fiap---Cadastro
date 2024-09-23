@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+
+
+    <title>Vagas para Você</title>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../sabrina/profile.html">Meu perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../wellington/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../julia/filtrarvagas.html">Filtrar Vagas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../julia/notificacoes.html">Notificações</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mais opções
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../vitor/centralajuda.html">FAQ e Suporte</a></li>
+                <li><a class="dropdown-item" href="../vitor/recursosed.html">Recursos Educacionais</a></li>
+                <li><a class="dropdown-item" href="../vitor/testevocacional.html">Teste Vocacional</a></li>
+                <li><a class="dropdown-item" href="../sabrina/orientação_profissional.html">Orientação profissional</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+<!-- Nome e campo de busca -->
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 id="greeting">Olá</h1>
+            <div class="search-bar">
+                <input type="text" class="form-control" placeholder="Procurar vagas...">
+                <button class="btn btn-light"><i class="bi bi-mic"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                    <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z"/>
+                    <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+                </svg></button>
+            </div>
+    </div>
+
+
+
+<!-- Carousel de vagas -->
+    <div class="mt-4">
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h3>Vagas para você</h3>
+            <button class="btn btn-outline-secondary">
+                <i class="bi bi-filter"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="20" height="20" fill="url(#pattern0_38_156)"/>
+                    <defs>
+                    <pattern id="pattern0_38_156" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_38_156" transform="scale(0.0078125)"/>
+                    </pattern>
+                    <image id="image0_38_156" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAAOwAAADsAEnxA+tAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABIhJREFUeJzt3U1rHlUYh/ErwarY1C50pahfQhfVTRR000irfgzdiQupUkUKxRdEQfwAVsVlG1eibRcVXfQjiNqmoRUUxZRCrTYupgMhSdOZJ+ece+bM9YN7l2fmvOTJzJyZ+QckSZIkSZI0CXNB+90DPAc8DRwAHgEeAO7r+PkbwJ/Az8A54CTwA/Bf8pYqqX3AUWAVWE9cvwGvAfcW6416eQm4RPqJ31wXgBcK9UkdzAFvkX/iN9ZN4Dgwn7972sk88BVlJ39jfU7ceY6AD4mb/Lbezt5Lbesw8ZPfHg48JyhsP3nO9GetC3h1sK1cJ0mvAA9l2vYsHqVpkwq4m2F9+9u6glcFOzoEnAWuUnZiTgGLwN4ebd1Ls4q43HNfT/XYRytqXHLUVeAM8PzmTh4PatDrdxr9Do702N+7PbcdNS4l6ljbyUNBDTjVcRK66PqX4Pse24wal5K1BM2ft4idL3aciC6e6bjPKz22ebbjNsdcp+eANWChx8Ckso/mmJRqW393+LnrdL8cjBqXktZqOSt2uXc26/PA+aCdP5FwW493/Lm/emwzalxKOg/NJUHE8Wc5YUe+7rjPcz22GTUuJetg29ljQQ040mkqdvZGj/31vQyMGpcS9c7mzi4Bp2lOfko2ZJnmLL7PCdfCrc90/ea39WSPfbSixiVHrQHfseGbn8NQl4Iv41LwFjkG5B/gkwzb3a33aG4Nq4D9lHn+r2v9AtyTtcfaYihLqTdvtUUBPiD+F+Bo9l7qtuaBL4mb/BO4ShjOx8IFwIvACvkn/1c85g/WAvAmea4QLgOv4tl+L1HHx7uAZ2meCTgAPAY8SPeXQ6/T3Nj5ieYhj5PAj3idL0mSJEmSJEnb8Fbp7uw27/Aa8AdwkSbn8AzwDfBv8pYqqZx5h6s0N8xqfy1ttErlHa7Q3ELXQEQ82LIOfIQPtoSLzjv8An8JQg0h7/D97L3UtpaIn/y2DmfuqzYZWt7hJeD+lB30uLKzoeUdPgy8HN2IqdhDmaeY+9YqzQu4ydWUhxdRJfMOZ63B5QTWUqXzDlNUeE5gLRWRd5iqQnMCa6nFrfM4s655h6kqNCewFhF5h6lUkxNYi9K350NzAmsRkXeYSmhOYC0VkXeYqsJzAmup0nmHKWowOYG1VMm8w1mrSE5gLSaxFOxVwO3dAD6NbsQ2PqbJYlQBQ8s7XCHx7WDd2UHiJ74ts4+CDCHvsG/SuRKKzjv8DF/iCedj4QLK5R1exH96PVg58w5XaFYWi9yh9biyO7vNO7wG/E7z383bl0O/xZdDJUmSJEmSJCUVtRRsvt5Ema83YebrTZQPUkyY+XoTZ77ehJmvN2HV5+vVItfx0Xy9CZvES5U1isoJHEO+Xi01uJzAMebr1VLhOYFjzterpUJzAhe3zuPMSufr1VKhOYFjzterRTU5gb7hNJvQnMAx5+vVIjQncMz5erVUeE7gGPP1aqnB5ASOIV+vliqSE+hS8IjkuAowX0/m68l8PWG+3uSZrycfC1fDfD3Vk69Xi6jjo/l6kiRJkiRJUkn/A4LNrLQ8UvB9AAAAAElFTkSuQmCC"/>
+                    </defs>
+                    </svg>
+                    </i> Filtros
+            </button>
+        </div>
+            <div id="vagasCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <a href="../julia/paginadavaga.html" class="carousel-item active text-black" style="text-decoration: none;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="vaga-card">
+                                    <h5>Assistente de Marketing</h5>
+                                        <div class="vaga-info">
+                                            <p>Híbrido - São Paulo/SP</p>
+                                            <p class="salario">R$ 2.500,00</p>
+                                        </div>
+                                </div>
+                            </div>
+                                <div class="col-md-6">
+                                    <div class="vaga-card">
+                                        <h5>Assistente Financeiro</h5>
+                                        <div class="vaga-info">
+                                            <p>Presencial - São Paulo/SP</p>
+                                            <p class="salario">R$ 2.500,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </a>
+                        <!-- Outras vagas no carousel -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="vaga-card">
+                                        <h5>Analista de CRM</h5>
+                                        <div class="vaga-info">
+                                            <p>Híbrido - São Paulo/SP</p>
+                                            <p class="salario">R$ 2.500,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="vaga-card">
+                                        <h5>Analista de Mídia Social</h5>
+                                        <div class="vaga-info">
+                                            <p>Híbrido - São Paulo/SP</p>
+                                            <p class="salario">R$ 2.500,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+<!-- Controles do carousel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#vagasCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#vagasCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+            </div>
+    </div>
+
+    <hr>
+
+<!-- Lista vagas inscritas-->
+    <div class="mt-4">
+        <h3>Vagas inscritas</h3>
+        <div class="vaga-card mb-3">
+            <h5>BTG</h5>
+            <h6>Analista de CRM </h6>
+                <div class="vaga-info">
+                    <p>Presencial - São Paulo/SP</p>
+                    <p class="salario">R$ 2.690,00</p>
+                </div>
+        </div>
+                <div class="vaga-card mb-3">
+                    <h5>Uber</h5>
+                    <h6>Analista de Mídia Social</h6>
+                    <div class="vaga-info">
+                        <p>Híbrido - São Paulo/SP</p>
+                        <p class="salario">R$ 2.300,00</p>
+                    </div>
+                </div>
+    </div>
+    
+            <!-- Caixa de mentoria -->
+            <div class="mt-4">
+                <h5>Continue a sua jornada na mentoria</h5>
+                <div class="mentoria-card">
+                    <p>Mentoria disponível em breve...</p>
+                </div>
+            </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+     <!-- script import -->
+     <script src="../../app.js"></script>
+     <script>
+         // Recupera o nome do cliente do localStorage e atualiza o conteúdo do elemento
+         document.addEventListener('DOMContentLoaded', function() {
+             const clientName = localStorage.getItem('clientName');
+             const greetingElement = document.getElementById('greeting');
+             if (clientName) {
+                 greetingElement.textContent = `Olá, ${clientName}`;
+             }
+         });
+     </script>
+</body>
+</html>
+
+

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333; 
+    line-height: 1.6;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto; 
+    padding: 20px;
+}
+
+
+form {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db; 
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Botão de enviar */
+button[type="submit"] {
+    display: inline-block;
+    background-color: #E1E1E1; /* Azul índigo */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Mudança de cor ao passar o mouse no botão */
+button[type="submit"]:hover {
+    background-color:  rgb(111, 111, 112); /* Tom mais escuro de azul quando o mouse passa sobre */
+}
+
+/* Espaçamento elementos formulári */
+.mb-4 {
+    margin-bottom: 20px;
+}

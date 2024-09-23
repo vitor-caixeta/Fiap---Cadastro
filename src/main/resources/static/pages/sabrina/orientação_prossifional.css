@@ -1,0 +1,57 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização dos cards */
+.card {
+    border-radius: 15px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Estilização dos titulos nos cards */
+.card-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilização dos textos cards */
+.col-12 h4 {
+    font-weight: 800;
+}
+
+/*estilização OI,maria*/
+.estilo-maria {
+    font-weight: bold; 
+    color: 333;      
+    font-size: 18px;  
+}
+
+
+/* Ajustes no carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 40%;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    .carousel-item .col-sm-4 {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+}
+
+/* Ajusta os botões de controle */
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 5%; 
+}
+

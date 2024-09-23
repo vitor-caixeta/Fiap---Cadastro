@@ -1,0 +1,40 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.form-check-label {
+  font-size: 14px;
+  color: #000;
+}
+
+.button {
+    background-color: #e0e0e0;
+    color: #000;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.me-2{
+  text-decoration: none;
+}
+
+/* Estilo para inputs com linha embaixo */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none; /* Remove todas as bordas */
+  border-bottom: 2px solid #000000; /* Adiciona apenas a borda inferior */
+  border-radius: 0; /* Remove o arredondamento das bordas */
+  outline: none; /* Remove a linha azul ao focar no campo */
+  padding: 10px 0; /* Adiciona espaço superior e inferior */
+  width: 100%; /* Faz com que o input ocupe toda a largura do contêiner */
+}

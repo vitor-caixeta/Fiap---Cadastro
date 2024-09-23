@@ -1,0 +1,204 @@
+:root {
+    font-family: Poppins;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+
+/* Filtrar Vagas */
+
+/* Estilo para a Navbar */
+#navbar-pagina1, #navbar-pagina2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0.5rem 1rem; 
+    position: relative;
+}
+
+#navbar-pagina1, #navbar-pagina3.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinha os itens da Navbar aos extremos */
+    width: 100%;
+}
+
+#navbar-pagina1, #navbar-pagina3 a {
+    position: absolute; 
+    left: 0; 
+}
+
+#navbar-pagina1, #navbar-pagina3 h2 {
+    margin: 0;
+    flex: 1; 
+    text-align: center;
+}
+
+
+/* localizacao  */
+.localizacao {
+    max-height: 100px;
+    overflow: scroll;
+}
+
+/* categoria  */
+.categoria {
+    max-height: 100px;
+    overflow: scroll;
+}
+
+/* range  */
+
+.range-container {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.custom-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    position: absolute;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.custom-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.slider-track {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-fill {
+    position: absolute;
+    height: 8px;
+    background: #000000;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.range-value {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Página da Vaga  */
+
+/* Estilo para a barra de navegação */
+#navbar-pagina2 {
+    margin-bottom: 1rem; /* Espaçamento inferior para a navbar */
+}
+
+#navbar-pagina2-content {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    
+}
+
+/* Estilo para o título da navbar */
+#navbar-pagina2-title {
+    margin: 0; /* Remove margens padrão */
+    text-align: center; /* Centraliza o texto */
+    flex: 1; /* Faz com que o título ocupe o máximo de espaço disponível */
+}
+
+/* Estilo para o ícone da Ambev */
+.icone-ambev {
+    width: 40px; 
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+/* Estilo para o título da descrição da vaga */
+.title {
+    margin: 0; /* Remove margens padrão */
+    flex: 1; /* Faz com que o título ocupe o máximo de espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+
+/* Estilo da navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo do título */
+.title {
+    margin: 0;
+    font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Estilo do botão de favorito */
+.favorite-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-size: 1.5rem; /* Tamanho do ícone */
+    color: #ccc; /* Cinza claro inicial */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+/* Efeito de hover */
+.favorite-btn:hover {
+    color: #666; /* Cinza mais escuro ao passar o mouse */
+}
+
+/* Estilo para o coração ativo (favoritado) */
+.favorite-btn.active {
+    color: #000; /* Preto quando favoritado */
+}
